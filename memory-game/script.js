@@ -7,27 +7,52 @@ const kidsStore = "./pics/kids-store.jpg";
 const checkMatch = [];
 const mordyChalkArray = [];
 const kidsStoreArray = [];
+function secondClick() {
+    function makeMordyChalk(pic) {
+        pic.addEventListener("click", function() {
+            if (checkMatch.length === 1) {
+            pic.setAttribute('src', mordyChalk);
+            mordyChalkArray.push(pic);
+            checkMatch.push(pic);
+        }})
+    };
+    function makeKidsStore(pic) {
+        pic.addEventListener('click', function() {
+            if (checkMatch.length === 1) {
+            pic.setAttribute('src', kidsStore);
+            kidsStoreArray.push(pic);
+            checkMatch.push(pic);
+        }})
+    }
+    makeKidsStore(oneTwo);
+    makeMordyChalk(oneOne);
+    makeKidsStore(oneFour);
+    makeMordyChalk(oneThree);
+}
+function firstClick() {
 function makeMordyChalk(pic) {
     pic.addEventListener("click", function() {
+        if (mordyChalkArray.length < 2) {
+        if (checkMatch.length === 0) {
         pic.setAttribute('src', mordyChalk);
         mordyChalkArray.push(pic);
         checkMatch.push(pic);
-    })
+        secondClick();
+    }}})
 };
 function makeKidsStore(pic) {
     pic.addEventListener('click', function() {
+        if (checkMatch.length === 0) {
         pic.setAttribute('src', kidsStore);
         kidsStoreArray.push(pic);
         checkMatch.push(pic);
-    })
-};
-function flipCards() {
-    while (checkMatch.length < 2) {
-        makeMordyChalk(oneOne);
-        makeMordyChalk(oneThree);
-        makeKidsStore(oneTwo);
-        makeKidsStore(oneFour);
-    }
+        secondClick();
+    }})
 }
-flipCards()
+makeKidsStore(oneTwo);
+makeMordyChalk(oneOne);
+makeKidsStore(oneFour);
+makeMordyChalk(oneThree);
+};
 
+firstClick()

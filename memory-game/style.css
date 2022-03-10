@@ -1,4 +1,4 @@
-#logos img {
+#cards img {
     background-color: blue;
     width: 40px;
     height: 80px;
@@ -7,7 +7,7 @@
     padding-top: 10px;
     padding-bottom: 10px;
 }
-#logos img[src="./pics/mordy-chalk.jpg"] {
+#cards img[src="./pics/mordy-chalk.jpg"] {
     width: 50px;
     height: 100px;
     padding-top: 0px;
