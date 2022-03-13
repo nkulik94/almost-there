@@ -1,18 +1,23 @@
-#cards img {
-    background-color: blue;
-    width: 40px;
-    height: 80px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+#header {
+    width: fit-content;
+    margin: auto;
+    text-align: center;
 }
-#cards img[src="./pics/mordy-chalk.jpg"] {
-    width: 50px;
-    height: 100px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 25px;
-    padding-right: 25px;
-    background-color: red;
+#game-board {
+    width: 80%;
+    margin: auto;
+    background-image: url(./background-pic-1.jpg);
+    text-align: center;
+}
+#game-board img {
+    background-color: white;
+    width: 70px;
+    height: 150px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 5px;
+}
+#continue {
+    font-size: larger;
+    background-color: aqua;
 }
