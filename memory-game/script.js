@@ -10,13 +10,20 @@ const picsArray = ['./pics/chavi-elchonon-wagon.jpg', './pics/chavi-elchonon-wag
 // flipped cards will be added to this array to check if they match
 const checkMatch = []
 // Fisher-Yates shuffle to shuffle the cards. I'm still not sure how it works but it does
-
+window.addEventListener('load', function() {
+  for (let i = picsArray.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    const temp = picsArray[i];
+    picsArray[i] = picsArray[j];
+    picsArray[j] = temp;
+  }
+})
 function flipCards(line, i, n) {
   line[i].addEventListener('click', function() {
-    if (checkMatch.length < 2) {
+    if (checkMatch.length < 2) { if (line[i].getAttribute('src') === logo) {
         line[i].setAttribute('src', picsArray[n]);
         checkMatch.push(line[i]);
-    }
+    }}
   })
 }
 function buttonClick() {
