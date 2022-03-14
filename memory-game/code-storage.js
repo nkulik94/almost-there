@@ -77,3 +77,12 @@ function fisherYates(array) {
         array[j] = temp;
       }
 }
+
+window.addEventListener('load', function() {
+    for (let i = picsArray.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      const temp = picsArray[i];
+      picsArray[i] = picsArray[j];
+      picsArray[j] = temp;
+    }
+  })
