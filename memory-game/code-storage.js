@@ -43,7 +43,7 @@ function secondClick() {
     if (oneThree !== mordyChalkArray[0]) {
     makeMordyChalk(oneThree)};
 }
-function firstClick() {
+function firsClick() {
 function makeMordyChalk(pic) {
     pic.addEventListener("click", function() {
         if (mordyChalkArray.length < 2) {
@@ -68,4 +68,12 @@ makeMordyChalk(oneOne);
 makeKidsStore(oneFour);
 makeMordyChalk(oneThree);
 };
-firstClick()
+firstClic()
+function fisherYates(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        const temp = allPics[i];
+        array[i] = allPics[j];
+        array[j] = temp;
+      }
+}
