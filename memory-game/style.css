@@ -45,17 +45,17 @@
 }
 #game-board img[src="./pics/family-lancaster.jpg"] {
     background-color: #ffffff;
-    width: 100px;
+    width: 150px;
     height: 150px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 #game-board img[src="./pics/kids-costumes.jpg"] {
     background-color: #ffffff;
-    width: 100px;
+    width: 150px;
     height: 150px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 #game-board img[src="./pics/kids-ice-cream.jpg"] {
     background-color: #ffffff;
@@ -73,36 +73,36 @@
 }
 #game-board img[src="./pics/kids-store.jpg"] {
     background-color: #ffffff;
-    width: 100px;
+    width: 150px;
     height: 150px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 #game-board img[src="./pics/me-mordy-dentist.jpg"] {
     background-color: #ffffff;
-    width: 120px;
+    width: 150px;
     height: 150px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 #game-board img[src="./pics/mordy-cabinet.jpg"] {
     background-color: #ffffff;
-    width: 100px;
+    width: 150px;
     height: 150px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 #game-board img[src="./pics/mordy-laundry.jpg"] {
     background-color: #ffffff;
-    width: 120px;
+    width: 150px;
     height: 150px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 #game-board img[src="./pics/mordy-toolset.jpg"] {
     background-color: #ffffff;
-    width: 100px;
+    width: 150px;
     height: 150px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
