@@ -8,6 +8,7 @@
     margin: auto;
     background-image: url(./background-pic-1.jpg);
     text-align: center;
+    position: relative;
 }
 #game-board img {
     background-color: white;
@@ -17,10 +18,21 @@
     padding-right: 40px;
     margin: 5px;
 }
+#message-container {
+    position: absolute;
+    background-color: rgba(120, 120, 120, 0.6);
+}
+#message {
+    font-size: 40px;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
 #button {
-    font-size: larger;
-    background-color: blue;
+    font-size: 30px;
+    background-color: rgba(0, 0, 255, 0.65);
     color: #ffffff;
+    margin-top: 0px;
 }
 #game-board img[src="./pics/chavi-elchonon-wagon.jpg"] {
     background-color: #ffffff;

@@ -2,7 +2,9 @@ const lineOne = document.getElementsByClassName('line-1');
 const lineTwo = document.getElementsByClassName('line-2');
 const lineThree = document.getElementsByClassName('line-3');
 const lineFour = document.getElementsByClassName('line-4');
-const button = document.getElementById('button')
+const messageContainer = document.getElementById('message-container')
+const message = document.getElementById('message');
+const button = document.getElementById('button');
 const logoPath = './card-logo.jpg'
 const logo = 'card-logo.jpg'
 // This is the array that contains the path for the flip side of the cards
@@ -17,22 +19,43 @@ window.addEventListener('load', function() {
     picsArray[i] = picsArray[j];
     picsArray[j] = temp;
   }
-})
+});
+// hides match result message
+messageContainer.style.display = 'none'
+// function to flip the cards and disply correct message
 function flipCards(line, i, n) {
   line[i].addEventListener('click', function() {
     if (checkMatch.length < 2) { if (line[i].getAttribute('src') === logo) {
         line[i].setAttribute('src', picsArray[n]);
         checkMatch.push(line[i]);
-    }}
+    }};
+    if (checkMatch.length === 2) {
+      if (checkMatch[0].getAttribute('src') === checkMatch[1].getAttribute('src')) {
+        message.textContent = 'You got a match!'
+        messageContainer.style.left = '37.2%'
+        messageContainer.style.top = '42%'
+        messageContainer.style.display = ""
+      } else {
+        message.textContent = "Aww, try again"
+        messageContainer.style.left = '38.5%'
+        messageContainer.style.top = '42.5%'
+        messageContainer.style.display = ''
+      }
+    }
   })
 }
 function buttonClick() {
     document.getElementById('button').addEventListener('click', function() {
       if (checkMatch.length === 2) {
-        if (checkMatch[0].getAttribute('src') !== checkMatch[1].getAttribute('src')) {
+        if (checkMatch[0].getAttribute('src') === checkMatch[1].getAttribute('src')) {
+          checkMatch[0].style.visibility = 'hidden';
+          checkMatch[1].style.visibility = 'hidden';
+        } else if (checkMatch[0].getAttribute('src') !== checkMatch[1].getAttribute('src')) {
           checkMatch[0].setAttribute('src', logo);
           checkMatch[1].setAttribute('src', logo);
-        }
+        };
+        messageContainer.style.display = 'none';
+        message.textContent = ''
         checkMatch.pop();
         checkMatch.pop();
       }
