@@ -20,9 +20,9 @@ window.addEventListener('load', function() {
     picsArray[j] = temp;
   }
 });
-// hides match result message
+// hides match result message until needed
 messageContainer.style.display = 'none'
-// function to flip the cards and disply correct message
+// Event listener to flip cards when clicked, check for match, and display appropriate message
 function flipCards(line, i, n) {
   line[i].addEventListener('click', function() {
     if (checkMatch.length < 2) { if (line[i].getAttribute('src') === logo) {
@@ -44,6 +44,7 @@ function flipCards(line, i, n) {
     }
   })
 }
+// Event listener to hide message, hide matched cards, and continue game when button is clicked
 function buttonClick() {
     document.getElementById('button').addEventListener('click', function() {
       if (checkMatch.length === 2) {
@@ -61,6 +62,7 @@ function buttonClick() {
       }
     })
 }
+// function to start game by calling flipCard function on all of the cards and calling buttonClick function
 function startGame() {
   flipCards(lineOne, 0, 0);
   flipCards(lineOne, 1, 1);
