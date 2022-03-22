@@ -17,6 +17,7 @@ h2 {
 button {
     font-family: Helvetica, sans-serif;
     font-weight: bold;
+    font-size: 20px;
     color: blue;
 }
 #family-bio {
@@ -43,6 +44,7 @@ button {
     margin: auto;
     position: relative;
     width: fit-content;
+    height: fit-content;
     margin-top: 200px;
 }
 .profile-pic {
@@ -95,5 +97,5 @@ h2#memory-reminder {
     margin: auto;
     width: fit-content;
     margin-top: 200px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
