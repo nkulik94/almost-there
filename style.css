@@ -19,6 +19,58 @@ button {
     font-weight: bold;
     color: blue;
 }
+#family-bio {
+    margin: auto;
+    width: 75%;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    border-style: groove;
+    background-color: bisque;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    line-height: 25px;
+}
 #family-pic {
     width: 200px;
+}
+#intro {
+    width: fit-content;
+    margin: auto;
+    padding: 50px;
+    position: relative;
+}
+.profile-pic {
+    width: 100px;
+    margin-top: 5px;
+    float: left;
+    padding-right: 8px;
+}
+.bio {
+    overflow: auto;
+    padding: 5px;
+    border-style: dotted;
+    width: 500px;
+    display: inline-block;
+    margin: auto;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    background-color: azure;
+}
+#totty-bio {
+    margin-left: 15%;
+}
+#mommy-bio {
+    margin-left: 20px;
+}
+#elch-bio {
+    height: 167px;
+    margin-left: 15%;
+    margin-top: 20px;
+}
+#mordy-bio {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.bio-text {
+    padding-left: 5px;
+    list-style: none;
 }
