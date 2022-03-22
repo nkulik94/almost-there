@@ -20,7 +20,7 @@ h2 {
     font-weight: bold;
 }
 #game-board {
-    width: 80%;
+    width: 70%;
     margin: auto;
     text-align: center;
     position: relative;
@@ -52,7 +52,158 @@ h2 {
 #game-board img {
     width: 150px;
     height: 150px;
-    padding-left: 0px;
-    padding-right: 0px;
     margin: 5px;
+}
+@media screen and (max-width: 1300px) {
+    #game-board img {
+        width: 130px;
+        height: 130px;
+        margin: 4px;
+    }
+    #game-board img[src="card-logo.jpg"] {
+        background-color: white;
+    width: 60px;
+    height: 130px;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin: 4px;
+    }
+    #message {
+        font-size: 30px;
+        font-family: Comic Sans MS, Comic Sans, cursive;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    #button {
+        font-size: 20px;
+        background-color: rgba(0, 0, 255, 0.65);
+        color: #ffffff;
+        margin-top: 0px;
+    }
+}
+@media screen and (max-width: 1250px) {
+    #game-board img {
+        width: 110px;
+        height: 110px;
+        margin: 3px;
+    }
+    #game-board img[src="card-logo.jpg"] {
+        background-color: white;
+    width: 50px;
+    height: 110px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 3px;
+    }
+    #message {
+        font-size: 25px;
+        font-family: Comic Sans MS, Comic Sans, cursive;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    #button {
+        font-size: 15px;
+        background-color: rgba(0, 0, 255, 0.65);
+        color: #ffffff;
+        margin-top: 0px;
+    }
+}
+@media screen and (max-width: 1050px) {
+    #game-board img {
+        width: 90px;
+        height: 90px;
+        margin: 2px;
+    }
+    #game-board img[src="card-logo.jpg"] {
+        background-color: white;
+    width: 50px;
+    height: 90px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 2px;
+    }
+    #message {
+        font-size: 20px;
+        font-family: Comic Sans MS, Comic Sans, cursive;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    #button {
+        font-size: 10px;
+        background-color: rgba(0, 0, 255, 0.65);
+        color: #ffffff;
+        margin-top: 0px;
+    }
+}
+@media screen and (max-width: 850px) {
+    #game-board img {
+        width: 70px;
+        height: 70px;
+        margin: 1px;
+    }
+    #game-board img[src="card-logo.jpg"] {
+        background-color: white;
+    width: 50px;
+    height: 70px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 1px;
+    }
+    #message {
+        font-size: 15px;
+        font-family: Comic Sans MS, Comic Sans, cursive;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    #button {
+        font-size: 8px;
+        background-color: rgba(0, 0, 255, 0.65);
+        color: #ffffff;
+        margin-top: 0px;
+    }
+}
+@media screen and (max-width: 675px) {
+    #game-board img {
+        width: 50px;
+        height: 50px;
+        margin: 1px;
+    }
+    #game-board img[src="card-logo.jpg"] {
+        background-color: white;
+    width: 30px;
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 1px;
+    }
+}
+@media screen and (max-width: 490px) {
+    #game-board img {
+        width: 30px;
+        height: 30px;
+        margin: 1px;
+    }
+    #game-board img[src="card-logo.jpg"] {
+        background-color: white;
+    width: 15px;
+    height: 30px;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+    margin: 1px;
+    }
+}
+@media screen and (max-width: 330px) {
+    #game-board img {
+        width: 20px;
+        height: 20px;
+        margin: 1px;
+    }
+    #game-board img[src="card-logo.jpg"] {
+        background-color: white;
+    width: 10px;
+    height: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 1px;
+    }
 }
