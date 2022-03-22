@@ -25,7 +25,7 @@ h2 {
     text-align: center;
     position: relative;
 }
-#game-board img {
+#game-board img[src="card-logo.jpg"] {
     background-color: white;
     width: 70px;
     height: 150px;
@@ -49,87 +49,10 @@ h2 {
     color: #ffffff;
     margin-top: 0px;
 }
-#game-board img[src="./pics/chavi-elchonon-wagon.jpg"] {
-    background-color: #ffffff;
+#game-board img {
     width: 150px;
     height: 150px;
     padding-left: 0px;
     padding-right: 0px;
-}
-#game-board img[src="./pics/elchonon-keyboard.jpg"] {
-    background-color: #ffffff;
-    width: 150px;
-    height: 150px;
-    padding-left: 0px;
-    padding-right: 0px;
-}
-#game-board img[src="./pics/elchonon-snowman.jpg"] {
-    background-color: #ffffff;
-    width: 150px;
-    height: 150px;
-    padding-left: 0px;
-    padding-right: 0px;
-}
-#game-board img[src="./pics/family-lancaster.jpg"] {
-    background-color: #ffffff;
-    width: 150px;
-    height: 150px;
-    padding-left: 0px;
-    padding-right: 0px;
-}
-#game-board img[src="./pics/kids-costumes.jpeg"] {
-    background-color: #ffffff;
-    width: 150px;
-    height: 150px;
-    padding-left: 0px;
-    padding-right: 0px;
-}
-#game-board img[src="./pics/kids-ice-cream.jpg"] {
-    background-color: #ffffff;
-    width: 150px;
-    height: 150px;
-    padding-left: 0px;
-    padding-right: 0px;
-}
-#game-board img[src="./pics/kids-reading.jpg"] {
-    background-color: #ffffff;
-    width: 150px;
-    height: 150px;
-    padding-left: 0px;
-    padding-right: 0px;
-}
-#game-board img[src="./pics/kids-store.jpg"] {
-    background-color: #ffffff;
-    width: 150px;
-    height: 150px;
-    padding-left: 0px;
-    padding-right: 0px;
-}
-#game-board img[src="./pics/me-mordy-dentist.jpg"] {
-    background-color: #ffffff;
-    width: 150px;
-    height: 150px;
-    padding-left: 0px;
-    padding-right: 0px;
-}
-#game-board img[src="./pics/family-costumes.jpeg"] {
-    background-color: #ffffff;
-    width: 150px;
-    height: 150px;
-    padding-left: 0px;
-    padding-right: 0px;
-}
-#game-board img[src="./pics/mordy-laundry.jpg"] {
-    background-color: #ffffff;
-    width: 150px;
-    height: 150px;
-    padding-left: 0px;
-    padding-right: 0px;
-}
-#game-board img[src="./pics/mordy-toolset.jpg"] {
-    background-color: #ffffff;
-    width: 150px;
-    height: 150px;
-    padding-left: 0px;
-    padding-right: 0px;
+    margin: 5px;
 }

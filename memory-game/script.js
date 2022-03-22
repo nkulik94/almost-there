@@ -5,7 +5,6 @@ const lineFour = document.getElementsByClassName('line-4');
 const messageContainer = document.getElementById('message-container')
 const message = document.getElementById('message');
 const button = document.getElementById('button');
-const logoPath = './card-logo.jpg'
 const logo = 'card-logo.jpg'
 // This is the array that contains the path for the flip side of the cards
 const picsArray = ['./pics/chavi-elchonon-wagon.jpg', './pics/chavi-elchonon-wagon.jpg', './pics/elchonon-keyboard.jpg', './pics/elchonon-keyboard.jpg', './pics/elchonon-snowman.jpg', './pics/elchonon-snowman.jpg', './pics/family-lancaster.jpg', './pics/family-lancaster.jpg', './pics/kids-costumes.jpeg', './pics/kids-costumes.jpeg', './pics/kids-ice-cream.jpg', './pics/kids-ice-cream.jpg', './pics/kids-reading.jpg', './pics/kids-reading.jpg', './pics/kids-store.jpg', './pics/kids-store.jpg', './pics/me-mordy-dentist.jpg', './pics/me-mordy-dentist.jpg', './pics/family-costumes.jpeg', './pics/family-costumes.jpeg', './pics/mordy-laundry.jpg', './pics/mordy-laundry.jpg', './pics/mordy-toolset.jpg', './pics/mordy-toolset.jpg']
@@ -25,7 +24,8 @@ messageContainer.style.display = 'none'
 // Event listener to flip cards when clicked, check for match, and display appropriate message
 function flipCards(line, i, n) {
   line[i].addEventListener('click', function() {
-    if (checkMatch.length < 2) { if (line[i].getAttribute('src') === logo) {
+    if (checkMatch.length < 2) {
+      if (line[i].getAttribute('src') === logo) {
         line[i].setAttribute('src', picsArray[n]);
         checkMatch.push(line[i]);
     }};
