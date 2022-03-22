@@ -54,7 +54,7 @@ h2 {
     height: 150px;
     margin: 5px;
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1450px) {
     #game-board img {
         width: 130px;
         height: 130px;
