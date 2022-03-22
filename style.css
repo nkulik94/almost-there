@@ -37,7 +37,13 @@ button {
     width: fit-content;
     margin: auto;
     padding: 50px;
+    display: block;
+}
+#bio-container {
+    margin: auto;
     position: relative;
+    width: fit-content;
+    margin-top: 200px;
 }
 .profile-pic {
     width: 100px;
@@ -56,21 +62,38 @@ button {
     background-color: azure;
 }
 #totty-bio {
-    margin-left: 15%;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    height: 167px;
 }
 #mommy-bio {
-    margin-left: 20px;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    margin-left: 10px;
 }
 #elch-bio {
     height: 167px;
-    margin-left: 15%;
-    margin-top: 20px;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    margin-top: 10px;
 }
 #mordy-bio {
-    margin-left: 20px;
-    margin-top: 20px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 .bio-text {
     padding-left: 5px;
     list-style: none;
+}
+h2#memory-reminder {
+    margin: auto;
+    width: fit-content;
+    margin-top: 200px;
+    margin-bottom: 100px;
 }
